@@ -1,0 +1,13 @@
+{
+  "resource_uri": "/api/v1/employer_public_jobs/432883",
+  "opportunity_url": "/job-432883-lead-backend-engineer-java-at-deutsche-telekom-digital-labs-gurgaon/",
+  "hiring_company_name": "Deutsche Telekom Digital Labs",
+  "candidate_title": "Lead Backend Engineer (Java)",
+  "is_internship": false,
+  "is_active": true,
+  "id": 432883,
+  "locations": ["Gurgaon"],
+  "description": "<html><body><p>Build scalable backend applications.</p><p>Use Java and Spring.</p></body></html>",
+  "workex_min": 8,
+  "workex_max": 10
+}

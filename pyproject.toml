@@ -1,0 +1,89 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "job-atlas"
+version = "0.1.0"
+description = "AI-assisted, India-focused job search with local review and Excel exports"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Job Atlas contributors"}]
+keywords = [
+  "india jobs",
+  "job search",
+  "ai agent",
+  "job boards",
+  "resume tailoring",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Framework :: Pydantic :: 2",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Office/Business",
+]
+dependencies = [
+  "sqlalchemy>=2.0",
+  "pydantic>=2.0",
+  "httpx>=0.27",
+  "requests>=2.31",
+  "python-dotenv>=1.0",
+  "tenacity>=8.2",
+  "beautifulsoup4>=4.12",
+  "lxml>=5.0",
+  "cryptography>=42.0",
+  "playwright>=1.40",
+  "patchright>=1.60",
+  "jinja2>=3.1",
+  "pyyaml>=6.0",
+  "streamlit>=1.37",
+  "plotly>=5.20",
+  "pandas>=2.0",
+  "openpyxl>=3.1",
+  "rapidfuzz>=3.6",
+  "dnspython>=2.6",
+]
+
+[project.optional-dependencies]
+postgres = ["psycopg2-binary>=2.9"]
+gmail = [
+  "google-api-python-client>=2.100",
+  "google-auth-oauthlib>=1.2",
+]
+test = [
+  "google-api-python-client>=2.100",
+  "google-auth-oauthlib>=1.2",
+  "pytest>=8.0",
+  "psycopg2-binary>=2.9",
+]
+
+[project.scripts]
+job-atlas = "job_search_agent:main"
+job-atlas-dashboard = "app.dashboard.launcher:main"
+# Compatibility aliases for private beta installations.
+job-search-agent = "job_search_agent:main"
+job-search-dashboard = "app.dashboard.launcher:main"
+
+[project.urls]
+Repository = "https://github.com/yati989/job-atlas"
+Issues = "https://github.com/yati989/job-atlas/issues"
+
+[tool.setuptools]
+py-modules = ["job_search_agent"]
+include-package-data = true
+
+[tool.setuptools.cmdclass]
+build_py = "build_support.BuildPy"
+
+[tool.setuptools.package-data]
+"app.config" = ["india_cities.txt"]
+"app.resume" = ["templates/*.j2"]
+
+[tool.setuptools.packages.find]
+include = ["app*", "scripts*"]

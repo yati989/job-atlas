@@ -1,0 +1,3 @@
+interface:
+  display_name: "Test Extraction"
+  short_description: "Evaluate enrichment on a small job sample"

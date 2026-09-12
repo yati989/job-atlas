@@ -1,0 +1,3 @@
+interface:
+  display_name: "Enrich Jobs"
+  short_description: "Extract structured facts from job postings"

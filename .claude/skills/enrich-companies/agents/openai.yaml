@@ -1,0 +1,4 @@
+interface:
+  display_name: "Enrich Companies"
+  short_description: "Build complete contact-ready company profiles"
+  default_prompt: "Use $enrich-companies to enrich a bounded batch of companies for contact search."

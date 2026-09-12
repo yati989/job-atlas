@@ -1,0 +1,3 @@
+interface:
+  display_name: "Triage Board"
+  short_description: "Choose the cheapest viable scraper mechanism"

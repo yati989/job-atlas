@@ -1,0 +1,3 @@
+interface:
+  display_name: "Verify Connector"
+  short_description: "Verify one connector end to end"

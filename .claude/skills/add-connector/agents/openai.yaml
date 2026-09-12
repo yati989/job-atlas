@@ -1,0 +1,3 @@
+interface:
+  display_name: "Add Connector"
+  short_description: "Scaffold a job-board connector"

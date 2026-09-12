@@ -1,0 +1,8 @@
+include build_support.py
+recursive-include .claude/skills/full-pipeline *
+recursive-include .claude/skills/enrich-jobs *
+recursive-include .claude/skills/enrich-companies *
+recursive-include .claude/skills/tailor-resumes *
+recursive-include .claude/skills/find-profile-links *
+recursive-include .claude/skills/mock-interview *
+recursive-include .claude/skills/draft-outreach *

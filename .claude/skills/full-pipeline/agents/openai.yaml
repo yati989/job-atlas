@@ -1,0 +1,3 @@
+interface:
+  display_name: "Full Pipeline"
+  short_description: "Run the attended decision and outreach flow"

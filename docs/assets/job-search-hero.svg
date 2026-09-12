@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img" aria-labelledby="title desc">
+  <title id="title">Your AI-assisted job hunt, built for India</title>
+  <desc id="desc">Bring searches across Indian job boards into one workspace for jobs, company insights, shortlists, and resumes. Search your city, all India, or remote.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102f2a"/><stop offset="1" stop-color="#101c2b"/></linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#a5c0b6" opacity=".10"/></pattern>
+  </defs>
+  <rect width="1100" height="390" rx="20" fill="url(#bg)"/>
+  <rect width="1100" height="390" rx="20" fill="url(#dots)"/>
+  <path d="M48 0h74" stroke="#edb86e" stroke-width="5"/>
+  <path d="M122 0h74" stroke="#f1f4ed" stroke-width="5"/>
+  <path d="M196 0h74" stroke="#a7dcb3" stroke-width="5"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="61" fill="#bdd5ca" font-size="13" font-weight="700" letter-spacing="2">BUILT FOR YOUR INDIA JOB HUNT</text>
+    <text x="45" y="137" fill="#f7f8f2" font-size="54" font-weight="700" letter-spacing="-1.5">A clearer path</text>
+    <text x="45" y="198" fill="#c3efa3" font-size="54" font-weight="700" letter-spacing="-1.5">to your next role.</text>
+    <text x="48" y="244" fill="#c5d4d0" font-size="21">Bring the boards, research, and preparation</text>
+    <text x="48" y="274" fill="#c5d4d0" font-size="21">into one guided workspace.</text>
+    <g font-size="14" font-weight="700" fill="#e6eee7">
+      <rect x="48" y="315" width="107" height="33" rx="16" fill="#25473d"/>
+      <text x="101" y="337" text-anchor="middle">Your city</text>
+      <rect x="165" y="315" width="107" height="33" rx="16" fill="#25473d"/>
+      <text x="218" y="337" text-anchor="middle">All India</text>
+      <rect x="282" y="315" width="107" height="33" rx="16" fill="#25473d"/>
+      <text x="335" y="337" text-anchor="middle">Remote</text>
+    </g>
+    <g font-size="15" font-weight="700" text-anchor="middle" fill="#dce9e2">
+      <rect x="673" y="55" width="113" height="43" rx="10" fill="#203b37" stroke="#3d5e50"/>
+      <text x="730" y="82">Naukri</text>
+      <rect x="800" y="55" width="113" height="43" rx="10" fill="#203b37" stroke="#3d5e50"/>
+      <text x="856" y="82">Foundit</text>
+      <rect x="927" y="55" width="125" height="43" rx="10" fill="#203b37" stroke="#3d5e50"/>
+      <text x="989" y="82">+ more boards</text>
+    </g>
+    <path d="M730 99v21h259V99M856 99v54" fill="none" stroke="#91b69d" stroke-width="2"/>
+    <path d="m850 145 6 8 6-8" fill="none" stroke="#c3efa3" stroke-width="2"/>
+    <rect x="686" y="166" width="352" height="176" rx="14" fill="#f5f7ef"/>
+    <rect x="686" y="166" width="6" height="176" rx="3" fill="#c3efa3"/>
+    <text x="710" y="201" fill="#17382d" font-size="19" font-weight="700">Your search workspace</text>
+    <path d="M710 219h304" stroke="#d6dfd3"/>
+    <g fill="none" stroke="#3f7254" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m714 245 4 4 8-9M714 280l4 4 8-9M874 245l4 4 8-9M874 280l4 4 8-9"/>
+    </g>
+    <g font-size="15" fill="#304d40">
+      <text x="735" y="250">Jobs &amp; fit</text><text x="895" y="250">Companies</text>
+      <text x="735" y="285">Shortlist</text><text x="895" y="285">Resumes</text>
+    </g>
+    <text x="710" y="320" fill="#647568" font-size="12" letter-spacing=".7">AI ASSISTANCE. YOUR DECISIONS.</text>
+  </g>
+</svg>

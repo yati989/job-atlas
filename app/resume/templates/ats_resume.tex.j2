@@ -1,0 +1,109 @@
+%% ATS-safe resume template (ATS Resume Builder, issue #42).
+%% Deliberately single-column, standard fonts, standard section headings, and
+%% NO icons / tables / text-boxes / header-footer content. This is the exact
+%% opposite of a moderncv/two-column layout, whose reading order and glyphs
+%% break ATS text extraction. Jinja2 delimiters are customised (angle-bracket
+%% variable and angle-percent block markers) so they never collide with LaTeX
+%% braces. All user content passes through the tex filter, which escapes
+%% LaTeX specials. (Delimiter chars are kept out of these comments on purpose.)
+%%
+%% Section order is FIXED, by explicit user decision (2026-08-06), not a
+%% styling default: Summary, Skills, Education, Achievements, Experience,
+%% Projects — Projects last, after Experience, matching its relative
+%% position in the ORIGINAL (pre-2026-08-06) template order. Do not
+%% reorder these blocks without asking first.
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.45in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[none]{hyphenat}
+
+%% No hyphenation + ragged right: words never break across lines, so a skill or
+%% company name can't be split (e.g. "Machine Learn-ing") — cleaner for ATS text
+%% extraction and avoids stretched justification on a dense one-pager.
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+%% Compact spacing so a tailored resume fits on one page. Deliberately NOT
+%% using the parskip package (its inter-paragraph gap is what pushed the
+%% resume past one page); instead parindent=0 with a small explicit parskip.
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\linespread{0.98}
+\raggedbottom
+
+%% Plain hyphen label (not a bullet glyph) so pdftotext extracts clean ASCII.
+\setlist[itemize]{label=\texttt{-}, leftmargin=1.1em, topsep=0pt, itemsep=0pt, parsep=0pt}
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{5pt}{2pt}
+\pagestyle{empty}
+
+\begin{document}
+
+%% ---- Header (single column, plain text — parseable contact block) ----
+\begin{center}
+  {\LARGE \textbf{<< contact.name | tex >>}}\\[2pt]
+  <%- set parts = [] -%>
+  <%- if contact.phone %><% set _ = parts.append(contact.phone) %><% endif -%>
+  <%- if contact.email %><% set _ = parts.append(contact.email) %><% endif -%>
+  <%- if contact.location %><% set _ = parts.append(contact.location) %><% endif -%>
+  <%- for l in contact.links %><% set _ = parts.append(l) %><% endfor -%>
+  << parts | map('tex') | join('  |  ') >>
+\end{center}
+
+<% if summary %>
+\section{Summary}
+<< summary | texb >>
+<% endif %>
+
+<% if skills %>
+\section{Skills}
+<% for group in skills %>
+\textbf{<< group.category | tex >>:} << group.items | map('tex') | join(', ') >>\\
+<% endfor %>
+<% endif %>
+
+<% if education %>
+\section{Education}
+<% for ed in education %>
+\textbf{<< ed.institution | tex >>}\hfill << (ed.dates or '') | tex >>\\
+<< [ed.degree, ed.field] | select | map('tex') | join(', ') >><% if ed.gpa %>, GPA: << ed.gpa | tex >><% endif %><% if ed.location %>, << ed.location | tex >><% endif %>\\
+<% endfor %>
+<% endif %>
+
+<% if achievements %>
+\section{Achievements}
+\begin{itemize}
+<% for a in achievements %>  \item <% if a.year %>\textbf{<< a.year | tex >>:} <% endif %><< a.text | texb >>
+<% endfor %>\end{itemize}
+<% endif %>
+
+<% if experience %>
+\section{Experience}
+<% for e in experience %>
+\textbf{<< (e.title ~ ', ' if e.title else '') | tex >><< e.company | tex >>}\hfill << (e.dates or '') | tex >>
+<% if e.location %>\\ \textit{<< e.location | tex >>}<% endif %>
+<% if e.bullets %>
+\begin{itemize}
+<% for b in e.bullets %>  \item << b | texb >>
+<% endfor %>\end{itemize}
+<% endif %>
+<% endfor %>
+<% endif %>
+
+<% if projects %>
+\section{Projects}
+<% for p in projects %>
+\textbf{<< p.name | tex >>}<% if p.context %> (<< p.context | tex >>)<% endif %>\hfill << (p.dates or '') | tex >>
+<% if p.bullets %>
+\begin{itemize}
+<% for b in p.bullets %>  \item << b | texb >>
+<% endfor %>\end{itemize}
+<% endif %>
+<% endfor %>
+<% endif %>
+
+\end{document}

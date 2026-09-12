@@ -1,0 +1,3 @@
+interface:
+  display_name: "Enrich Company Domains"
+  short_description: "Resolve domains through company enrichment"

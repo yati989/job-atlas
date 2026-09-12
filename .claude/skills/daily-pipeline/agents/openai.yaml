@@ -1,0 +1,3 @@
+interface:
+  display_name: "Daily Pipeline"
+  short_description: "Run daily ingestion and enrichment"

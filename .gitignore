@@ -1,0 +1,67 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.job-search-agent/
+private/
+profiles/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+app/collectors/browser/.sessions/
+scorecards/
+# Per-batch contact evidence files (/find-contacts, #73). Real people's
+# names, emails and profile URLs — review artifacts, never repo content.
+contact_batches/
+# Per-batch prospect evidence files (/find-prospects). Same class as
+# contact_batches: human-review artifacts, and the function gate's strongest
+# evidence is "a named in-scope person", so these can carry real names too.
+prospect_batches/
+
+# Gmail OAuth (ADR-0009, /draft-outreach). credentials.json is a Google
+# Cloud OAuth client secret the user downloads themselves; .gmail_token.json
+# is the cached consent token scripts/gmail_auth.py writes. Neither is
+# project content and both grant real mailbox access.
+credentials.json
+.gmail_token.json
+.google_sheets_token.json
+credentials.env
+google-oauth-client.json
+gmail-token.json
+tools/
+output/
+outputs/
+logs/
+.scratch/
+.DS_Store
+# Ad-hoc scratch/debug output from interactive sessions — not project
+# content, just noise left behind by one-off terminal work.
+out*.txt
+scratch_*
+run_all_issue30*.log
+smoke_test_issue30*.log
+mem_poll_*.log
+page_dump.txt
+verify_links.txt
+~$*.xlsx
+C*scratchpad*.txt
+
+db_tables.xlsx
+extraction_results.json
+issue50_work_mode_check.xlsx
+job_agent_learnings.xlsx
+job_list.xlsx
+linkedin_50_with_desc.json
+linkedin_filter_results.json
+
+naukri_coverage_50.xlsx
+naukri_coverage_60.xlsx
+
+company_extraction_results.json
+company_results_readable.txt
+contact_qa_sample.txt
+contact_qa_sample2.txt
+
+*.xlsx

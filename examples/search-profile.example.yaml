@@ -1,0 +1,24 @@
+version: 1
+name: example-software-engineering
+professions: [software engineer]
+search_terms: [software engineer, backend engineer]
+relevance_terms: [software engineer, backend engineer, software developer]
+title_exclusions: [sales engineer]
+countries: [IN]
+# Any Indian city, or [] for all India when onsite/hybrid is selected.
+cities: [Bengaluru]
+# Add onsite/hybrid for local jobs; remote always means India-eligible remote.
+arrangements: [remote]
+# Both default to false. Set either to true only when you want that job type.
+include_internships: false
+include_part_time: false
+experience: {minimum_years: 2, maximum_years: 8}
+location_fallbacks:
+  exact_country_as_remote: false
+  unspecified_remote: false
+hard_rejects: [requires US work authorization]
+# Optional: defaults to 14; the public workflow allows at most 30.
+collection_window_days: 14
+source_selection:
+  mode: named
+  sources: [himalayas, weworkremotely, hn_hiring]

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Find Contacts"
+  short_description: "Find and persist qualified company contacts"
