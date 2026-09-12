@@ -5,6 +5,26 @@ the repository operations needed to maintain its job-board sources. Generic
 engineering, writing, and personal-productivity skill packs are intentionally
 excluded.
 
+`job-atlas setup` installs these seven end-user skills into
+`~/.agents/skills`: `full-pipeline`, `enrich-jobs`, `enrich-companies`,
+`tailor-resumes`, `find-profile-links`, `mock-interview`, and
+`draft-outreach`. The remaining skills in this catalog, including
+`find-prospects` and `find-contacts`, are additional repository workflows;
+they are not installed by the default setup bundle.
+
+### Standalone workflow prerequisites
+
+The public guided workflow uses Job Atlas's private SQLite data store. The
+legacy standalone modes of `enrich-jobs`, `enrich-companies`,
+`tailor-resumes`, and `draft-outreach` use the repository database session,
+which defaults to PostgreSQL; configure a compatible database before using
+those modes outside `full-pipeline`. `draft-outreach` also needs the optional
+Gmail dependencies (the `job-atlas[gmail]` extra, installed in the same
+environment as Job Atlas) and Gmail authorization
+to create Drafts. If no recipient address is supplied, it invokes
+`find-contacts`, which is a repository workflow and is not installed by
+default setup.
+
 ## Job seeker workflows
 
 | Skill | Use it for |

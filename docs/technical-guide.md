@@ -107,8 +107,7 @@ job-atlas setup
 ```
 
 `pipx install job-atlas` and `pip install job-atlas` are supported alternatives.
-Maintainers can use `pip install .` from a source checkout before the first
-published release.
+From a source checkout, use `pip install .` to install the same commands.
 
 `setup` initializes the local database and installs the job-seeker skills in
 `~/.agents/skills`. Restart the coding agent once after setup, then launch the
@@ -247,11 +246,14 @@ rows are still present and creates a new exact scope containing only approved
 jobs. Resume tailoring and LinkedIn profile research can then use that returned
 scope. The import does not start either optional stage automatically.
 
-Run the dashboard with:
+Run the installed dashboard with:
 
 ```bash
-streamlit run app/dashboard/public_app.py
+job-atlas-dashboard
 ```
+
+From a source checkout without installing the package, the equivalent command
+is `streamlit run app/dashboard/public_app.py`.
 
 Then open <http://127.0.0.1:8501>. Choose a plain-language search in the
 sidebar. Repeated attempts for the same search are represented by their latest

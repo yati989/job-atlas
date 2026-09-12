@@ -12,9 +12,15 @@ review. It must redact email addresses found incidentally in provider payloads
 before persistence, logging, display, or export.
 
 The public pipeline does not discover, derive, verify, store, or send contact
-emails. The separate `draft-outreach` skill accepts an address supplied by the
-user and creates a local reviewable draft only. That address remains confined
-to the private draft artifact and is not profile-discovery data.
+emails. Its profile-discovery stage stores only LinkedIn links and minimal
+professional evidence.
+
+`draft-outreach` is a separate, explicitly invoked workflow. It can use an
+address supplied by the user or, when given an existing company identity,
+invoke standalone contact and email discovery. It stores its contact and draft
+records in the configured private database and can create reviewable Gmail Drafts;
+it never sends messages. This outreach data is separate from public
+profile-discovery data.
 
 Users are responsible for complying with job-board terms, privacy law, and
 applicable communication rules. Generated resumes and drafts require human

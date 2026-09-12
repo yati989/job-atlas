@@ -1,53 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470" role="img" aria-labelledby="title desc">
-<title id="title">From discovery to preparation</title><desc id="desc">Six stages of a guided job search: find opportunities, understand fit, know the company, choose a shortlist, prepare resumes, and export results. Resume tailoring and deeper research are optional.</desc>
-<rect width="1100" height="470" rx="18" fill="#f4f6ef"/>
-<g font-family="Arial, Helvetica, sans-serif"><text x="30" y="45" font-size="25" font-weight="700" fill="#193c30">From discovery to preparation</text><text x="1070" y="44" text-anchor="end" font-size="14" fill="#637269">One guided workflow. Optional next steps.</text>
-<g transform="translate(30 72)">
-<rect width="326" height="160" rx="12" fill="#ffffff" stroke="#dbe3d7"/>
-<rect x="19" y="18" width="40" height="40" rx="10" fill="#eaf2df"/>
-<g transform="translate(25 24)" fill="none" stroke="#3b664a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><path d="m17 17 7 7"/></g>
-<text x="302" y="43" text-anchor="end" font-size="14" font-weight="700" fill="#879788">01</text>
-<text x="20" y="87" font-size="21" font-weight="700" fill="#1d3c30">Find opportunities</text>
-<text x="20" y="114" font-size="16" fill="#5a6c60">Search your selected boards.</text>
-<text x="20" y="138" font-size="16" fill="#5a6c60">Bring matching listings together.</text></g>
-<g transform="translate(387 72)">
-<rect width="326" height="160" rx="12" fill="#ffffff" stroke="#dbe3d7"/>
-<rect x="19" y="18" width="40" height="40" rx="10" fill="#eaf2df"/>
-<g transform="translate(25 24)" fill="none" stroke="#3b664a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="14" r="11"/><circle cx="14" cy="14" r="6"/><circle cx="14" cy="14" r="1"/></g>
-<text x="302" y="43" text-anchor="end" font-size="14" font-weight="700" fill="#879788">02</text>
-<text x="20" y="87" font-size="21" font-weight="700" fill="#1d3c30">Understand the fit</text>
-<text x="20" y="114" font-size="16" fill="#5a6c60">Check requirements and location.</text>
-<text x="20" y="138" font-size="16" fill="#5a6c60">See matches, gaps, and unknowns.</text></g>
-<g transform="translate(744 72)">
-<rect width="326" height="160" rx="12" fill="#ffffff" stroke="#dbe3d7"/>
-<rect x="19" y="18" width="40" height="40" rx="10" fill="#eaf2df"/>
-<g transform="translate(25 24)" fill="none" stroke="#3b664a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 25V4h18v21M2 25h24M10 25v-6h8v6M10 9h2m4 0h2m-8 5h2m4 0h2"/></g>
-<text x="302" y="43" text-anchor="end" font-size="14" font-weight="700" fill="#879788">03</text>
-<text x="20" y="87" font-size="21" font-weight="700" fill="#1d3c30">Know the company</text>
-<text x="20" y="114" font-size="16" fill="#5a6c60">Build employer context.</text>
-<text x="20" y="138" font-size="16" fill="#5a6c60">Add deeper research if useful.</text></g>
-<g transform="translate(30 256)">
-<rect width="326" height="160" rx="12" fill="#ffffff" stroke="#dbe3d7"/>
-<rect x="19" y="18" width="40" height="40" rx="10" fill="#eaf2df"/>
-<g transform="translate(25 24)" fill="none" stroke="#3b664a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 6 2 2 4-4m-6 12 2 2 4-4m4-8h13m-13 10h13M3 25h23"/></g>
-<text x="302" y="43" text-anchor="end" font-size="14" font-weight="700" fill="#879788">04</text>
-<text x="20" y="87" font-size="21" font-weight="700" fill="#1d3c30">Choose your shortlist</text>
-<text x="20" y="114" font-size="16" fill="#5a6c60">Explore the dashboard.</text>
-<text x="20" y="138" font-size="16" fill="#5a6c60">Decide which jobs deserve a look.</text></g>
-<g transform="translate(387 256)">
-<rect width="326" height="160" rx="12" fill="#ffffff" stroke="#dbe3d7"/>
-<rect x="19" y="18" width="40" height="40" rx="10" fill="#eaf2df"/>
-<g transform="translate(25 24)" fill="none" stroke="#3b664a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l6 6v18H6ZM18 2v7h6M10 14h10m-10 5h10"/></g>
-<text x="302" y="43" text-anchor="end" font-size="14" font-weight="700" fill="#879788">05</text>
-<text x="20" y="87" font-size="21" font-weight="700" fill="#1d3c30">Prepare your resume</text>
-<text x="20" y="114" font-size="16" fill="#5a6c60">Tailor it to the roles you choose.</text>
-<text x="20" y="138" font-size="16" fill="#5a6c60">Keep every claim grounded.</text></g>
-<g transform="translate(744 256)">
-<rect width="326" height="160" rx="12" fill="#ffffff" stroke="#dbe3d7"/>
-<rect x="19" y="18" width="40" height="40" rx="10" fill="#eaf2df"/>
-<g transform="translate(25 24)" fill="none" stroke="#3b664a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h8M5 5v20h20v-8M14 4h11v11M25 4 12 17"/></g>
-<text x="302" y="43" text-anchor="end" font-size="14" font-weight="700" fill="#879788">06</text>
-<text x="20" y="87" font-size="21" font-weight="700" fill="#1d3c30">Take your next step</text>
-<text x="20" y="114" font-size="16" fill="#5a6c60">Export your results and links.</text>
-<text x="20" y="138" font-size="16" fill="#5a6c60">Review, apply, and prepare.</text></g>
-<text x="30" y="454" font-size="13" fill="#647568">You review the plan and shortlist. Add interview practice or outreach drafting as separate companion workflows.</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" role="img" aria-labelledby="title desc">
+  <title id="title">Your search, stage by stage</title>
+  <desc id="desc">One: plan your search. Two: collect and screen jobs. Three: build job and company context. Four: optionally add deeper research with an approved scope and cost. Five: shortlist and export. Six: optionally tailor resumes or find LinkedIn profile links. Interview practice and outreach drafts are separate companion workflows.</desc>
+  <rect width="1200" height="570" rx="20" fill="#f3f6ef"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="32" y="49" font-size="30" font-weight="700" fill="#193c30">Your search, stage by stage</text>
+    <text x="32" y="80" font-size="18" fill="#536a5a">Start with a reviewed plan. Choose how far to go.</text>
+
+    <g transform="translate(32 108)">
+      <rect width="362" height="182" rx="14" fill="#ffffff" stroke="#d5dfcf"/>
+      <rect x="20" y="18" width="40" height="38" rx="10" fill="#e6efdc"/>
+      <text x="40" y="44" text-anchor="middle" font-size="18" font-weight="700" fill="#355d43">01</text>
+      <text x="20" y="90" font-size="24" font-weight="700" fill="#1d3c30">Plan your search</text>
+      <text x="20" y="124" font-size="17" fill="#536a5a">Share your roles and preferences.</text>
+      <text x="20" y="150" font-size="17" fill="#536a5a">Review the boards before collection.</text>
+    </g>
+    <g transform="translate(419 108)">
+      <rect width="362" height="182" rx="14" fill="#ffffff" stroke="#d5dfcf"/>
+      <rect x="20" y="18" width="40" height="38" rx="10" fill="#e6efdc"/>
+      <text x="40" y="44" text-anchor="middle" font-size="18" font-weight="700" fill="#355d43">02</text>
+      <text x="20" y="90" font-size="24" font-weight="700" fill="#1d3c30">Collect &amp; screen jobs</text>
+      <text x="20" y="124" font-size="17" fill="#536a5a">Bring listings together.</text>
+      <text x="20" y="150" font-size="17" fill="#536a5a">Review fit, duplicates, and unknowns.</text>
+    </g>
+    <g transform="translate(806 108)">
+      <rect width="362" height="182" rx="14" fill="#ffffff" stroke="#d5dfcf"/>
+      <rect x="20" y="18" width="40" height="38" rx="10" fill="#e6efdc"/>
+      <text x="40" y="44" text-anchor="middle" font-size="18" font-weight="700" fill="#355d43">03</text>
+      <text x="20" y="90" font-size="24" font-weight="700" fill="#1d3c30">Build the context</text>
+      <text x="20" y="124" font-size="17" fill="#536a5a">Read requirements and skills.</text>
+      <text x="20" y="150" font-size="17" fill="#536a5a">Understand the employer and team.</text>
+    </g>
+
+    <g transform="translate(32 312)">
+      <rect width="362" height="182" rx="14" fill="#ffffff" stroke="#d5dfcf"/>
+      <rect x="20" y="18" width="40" height="38" rx="10" fill="#e6efdc"/>
+      <text x="40" y="44" text-anchor="middle" font-size="18" font-weight="700" fill="#355d43">04</text>
+      <rect x="238" y="24" width="104" height="27" rx="13" fill="#f6e8c9"/>
+      <text x="290" y="42" text-anchor="middle" font-size="12" font-weight="700" letter-spacing=".8" fill="#755421">OPTIONAL</text>
+      <text x="20" y="90" font-size="24" font-weight="700" fill="#1d3c30">Add deeper research</text>
+      <text x="20" y="124" font-size="17" fill="#536a5a">Choose ratings or salary evidence.</text>
+      <text x="20" y="150" font-size="17" fill="#536a5a">Review the scope and cost first.</text>
+    </g>
+    <g transform="translate(419 312)">
+      <rect width="362" height="182" rx="14" fill="#ffffff" stroke="#d5dfcf"/>
+      <rect x="20" y="18" width="40" height="38" rx="10" fill="#e6efdc"/>
+      <text x="40" y="44" text-anchor="middle" font-size="18" font-weight="700" fill="#355d43">05</text>
+      <text x="20" y="90" font-size="24" font-weight="700" fill="#1d3c30">Shortlist &amp; export</text>
+      <text x="20" y="124" font-size="17" fill="#536a5a">Keep the jobs you want to pursue.</text>
+      <text x="20" y="150" font-size="17" fill="#536a5a">Review the dashboard and workbook.</text>
+    </g>
+    <g transform="translate(806 312)">
+      <rect width="362" height="182" rx="14" fill="#ffffff" stroke="#d5dfcf"/>
+      <rect x="20" y="18" width="40" height="38" rx="10" fill="#e6efdc"/>
+      <text x="40" y="44" text-anchor="middle" font-size="18" font-weight="700" fill="#355d43">06</text>
+      <rect x="238" y="24" width="104" height="27" rx="13" fill="#f6e8c9"/>
+      <text x="290" y="42" text-anchor="middle" font-size="12" font-weight="700" letter-spacing=".8" fill="#755421">OPTIONAL</text>
+      <text x="20" y="90" font-size="24" font-weight="700" fill="#1d3c30">Prepare your next step</text>
+      <text x="20" y="124" font-size="17" fill="#536a5a">Tailor resumes or find profile links.</text>
+      <text x="20" y="150" font-size="17" fill="#536a5a">Use your chosen jobs and companies.</text>
+    </g>
+    <text x="32" y="539" font-size="17" fill="#536a5a">Interview practice and outreach drafts are separate workflows you can start when needed.</text>
+  </g>
+</svg>

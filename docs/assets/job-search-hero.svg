@@ -1,50 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img" aria-labelledby="title desc">
-  <title id="title">Your AI-assisted job hunt, built for India</title>
-  <desc id="desc">Bring searches across Indian job boards into one workspace for jobs, company insights, shortlists, and resumes. Search your city, all India, or remote.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="568" viewBox="0 0 1200 568" role="img" aria-labelledby="title desc">
+  <title id="title">Job Atlas: your job hunt, with a plan</title>
+  <desc id="desc">Provide your role, experience, and location preferences. Job Atlas helps your coding agent collect and screen jobs, understand requirements and companies, and build your shortlist. Review a local dashboard and Excel workbook. Choose optional resumes, LinkedIn profile links, interview practice, or separately requested outreach drafts.</desc>
   <defs>
-    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102f2a"/><stop offset="1" stop-color="#101c2b"/></linearGradient>
-    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#a5c0b6" opacity=".10"/></pattern>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#10352d"/>
+      <stop offset="1" stop-color="#101d2d"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#a5c0b6" opacity=".10"/>
+    </pattern>
   </defs>
-  <rect width="1100" height="390" rx="20" fill="url(#bg)"/>
-  <rect width="1100" height="390" rx="20" fill="url(#dots)"/>
-  <path d="M48 0h74" stroke="#edb86e" stroke-width="5"/>
-  <path d="M122 0h74" stroke="#f1f4ed" stroke-width="5"/>
-  <path d="M196 0h74" stroke="#a7dcb3" stroke-width="5"/>
+  <rect width="1200" height="568" rx="22" fill="url(#background)"/>
+  <rect width="1200" height="568" rx="22" fill="url(#dots)"/>
+  <path d="M48 2h76" stroke="#edb86e" stroke-width="4"/>
+  <path d="M124 2h76" stroke="#f1f4ed" stroke-width="4"/>
+  <path d="M200 2h76" stroke="#a7dcb3" stroke-width="4"/>
   <g font-family="Arial, Helvetica, sans-serif">
-    <text x="48" y="61" fill="#bdd5ca" font-size="13" font-weight="700" letter-spacing="2">BUILT FOR YOUR INDIA JOB HUNT</text>
-    <text x="45" y="137" fill="#f7f8f2" font-size="54" font-weight="700" letter-spacing="-1.5">A clearer path</text>
-    <text x="45" y="198" fill="#c3efa3" font-size="54" font-weight="700" letter-spacing="-1.5">to your next role.</text>
-    <text x="48" y="244" fill="#c5d4d0" font-size="21">Bring the boards, research, and preparation</text>
-    <text x="48" y="274" fill="#c5d4d0" font-size="21">into one guided workspace.</text>
-    <g font-size="14" font-weight="700" fill="#e6eee7">
-      <rect x="48" y="315" width="107" height="33" rx="16" fill="#25473d"/>
-      <text x="101" y="337" text-anchor="middle">Your city</text>
-      <rect x="165" y="315" width="107" height="33" rx="16" fill="#25473d"/>
-      <text x="218" y="337" text-anchor="middle">All India</text>
-      <rect x="282" y="315" width="107" height="33" rx="16" fill="#25473d"/>
-      <text x="335" y="337" text-anchor="middle">Remote</text>
+    <text x="48" y="65" fill="#bdd5ca" font-size="13" font-weight="700" letter-spacing="1.8">BUILT FOR YOUR INDIA JOB SEARCH</text>
+    <text x="45" y="158" fill="#f7f8f2" font-size="64" font-weight="700" letter-spacing="-1.8">Your job hunt,</text>
+    <text x="45" y="232" fill="#c3efa3" font-size="64" font-weight="700" letter-spacing="-1.8">with a plan.</text>
+    <text x="48" y="289" fill="#d0ddd7" font-size="21">Find jobs. Understand companies.</text>
+    <text x="48" y="321" fill="#d0ddd7" font-size="21">Choose your next step with your coding agent.</text>
+    <g font-size="15" font-weight="700" fill="#e6eee7" text-anchor="middle">
+      <rect x="48" y="382" width="132" height="37" rx="18" fill="#254b3e"/>
+      <text x="114" y="406">Indian cities</text>
+      <rect x="190" y="382" width="103" height="37" rx="18" fill="#254b3e"/>
+      <text x="241.5" y="406">All India</text>
+      <rect x="303" y="382" width="202" height="37" rx="18" fill="#254b3e"/>
+      <text x="404" y="406">India-eligible remote</text>
     </g>
-    <g font-size="15" font-weight="700" text-anchor="middle" fill="#dce9e2">
-      <rect x="673" y="55" width="113" height="43" rx="10" fill="#203b37" stroke="#3d5e50"/>
-      <text x="730" y="82">Naukri</text>
-      <rect x="800" y="55" width="113" height="43" rx="10" fill="#203b37" stroke="#3d5e50"/>
-      <text x="856" y="82">Foundit</text>
-      <rect x="927" y="55" width="125" height="43" rx="10" fill="#203b37" stroke="#3d5e50"/>
-      <text x="989" y="82">+ more boards</text>
+    <text x="48" y="500" fill="#bdd5ca" font-size="13" font-weight="700" letter-spacing="1">OPEN SOURCE · RUNS ON YOUR COMPUTER</text>
+    <text x="48" y="528" fill="#bdd5ca" font-size="16">AI assistance. Your decisions.</text>
+
+    <rect x="636" y="44" width="516" height="116" rx="14" fill="#203c36" stroke="#416253"/>
+    <text x="658" y="72" fill="#c3efa3" font-size="12" font-weight="700" letter-spacing="1.6">YOU PROVIDE</text>
+    <text x="658" y="104" fill="#f1f5ed" font-size="19" font-weight="700">Role + experience + location preferences</text>
+    <text x="658" y="136" fill="#c5d8cc" font-size="16">Add your resume when you choose tailoring.</text>
+    <path d="M894 160v22m-6-7 6 7 6-7" fill="none" stroke="#c3efa3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="636" y="192" width="516" height="243" rx="16" fill="#f5f7ef"/>
+    <rect x="636" y="192" width="6" height="243" rx="3" fill="#c3efa3"/>
+    <text x="660" y="228" fill="#193e31" font-size="22" font-weight="700">Your guided workspace</text>
+    <path d="M660 245h468" stroke="#d6dfd3"/>
+    <g font-size="18" fill="#264c3c">
+      <circle cx="674" cy="274" r="13" fill="#e3edda"/>
+      <path d="m669 274 4 4 7-8" fill="none" stroke="#3d7150" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="700" y="280" font-weight="700">Collect &amp; screen jobs</text>
+      <circle cx="674" cy="320" r="13" fill="#e3edda"/>
+      <path d="m669 320 4 4 7-8" fill="none" stroke="#3d7150" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="700" y="326" font-weight="700">Understand requirements &amp; companies</text>
+      <circle cx="674" cy="366" r="13" fill="#e3edda"/>
+      <path d="m669 366 4 4 7-8" fill="none" stroke="#3d7150" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="700" y="372" font-weight="700">Choose your shortlist</text>
     </g>
-    <path d="M730 99v21h259V99M856 99v54" fill="none" stroke="#91b69d" stroke-width="2"/>
-    <path d="m850 145 6 8 6-8" fill="none" stroke="#c3efa3" stroke-width="2"/>
-    <rect x="686" y="166" width="352" height="176" rx="14" fill="#f5f7ef"/>
-    <rect x="686" y="166" width="6" height="176" rx="3" fill="#c3efa3"/>
-    <text x="710" y="201" fill="#17382d" font-size="19" font-weight="700">Your search workspace</text>
-    <path d="M710 219h304" stroke="#d6dfd3"/>
-    <g fill="none" stroke="#3f7254" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="m714 245 4 4 8-9M714 280l4 4 8-9M874 245l4 4 8-9M874 280l4 4 8-9"/>
-    </g>
-    <g font-size="15" fill="#304d40">
-      <text x="735" y="250">Jobs &amp; fit</text><text x="895" y="250">Companies</text>
-      <text x="735" y="285">Shortlist</text><text x="895" y="285">Resumes</text>
-    </g>
-    <text x="710" y="320" fill="#647568" font-size="12" letter-spacing=".7">AI ASSISTANCE. YOUR DECISIONS.</text>
+    <path d="M660 393h468" stroke="#d6dfd3"/>
+    <text x="660" y="419" fill="#466350" font-size="13" font-weight="700" letter-spacing=".8">LOCAL DASHBOARD + EXCEL WORKBOOK</text>
+
+    <rect x="636" y="453" width="516" height="80" rx="13" fill="#203831" stroke="#416253"/>
+    <text x="658" y="477" fill="#c3efa3" font-size="11" font-weight="700" letter-spacing="1.5">OPTIONAL NEXT STEPS</text>
+    <text x="658" y="500" fill="#e6eee7" font-size="17">Resumes · Profile links · Interview practice</text>
+    <text x="658" y="522" fill="#c5d8cc" font-size="14">Separate outreach drafts when requested</text>
   </g>
 </svg>
