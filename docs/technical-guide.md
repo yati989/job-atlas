@@ -139,7 +139,9 @@ job-atlas auth status
 
 The setup prompt masks Bright Data API keys, copies the selected Google OAuth
 client JSON, and can open Google's one-time Gmail consent flow. Credentials and
-tokens default to `~/.job-atlas` with private file permissions. Existing
+tokens default to `~/.job-atlas`. On macOS and Linux, Job Atlas sets private
+directory and file modes; on Windows, the directory inherits the current
+user profile's access controls. Existing
 checkout `.env`, `credentials.json`, and `.gmail_token.json` files remain
 supported for older installations. Status output reports presence and source
 only; it never prints keys, client secrets, or OAuth tokens.

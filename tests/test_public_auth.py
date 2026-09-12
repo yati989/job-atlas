@@ -28,8 +28,9 @@ def test_bright_data_credentials_are_private_and_status_never_returns_secrets(tm
         "BRIGHT_DATA_API_KEY2=second-secret\n"
         "BRIGHT_DATA_ZONE=custom-zone\n"
     )
-    assert os.stat(private_home).st_mode & 0o777 == 0o700
-    assert os.stat(path).st_mode & 0o777 == 0o600
+    if os.name != "nt":
+        assert os.stat(private_home).st_mode & 0o777 == 0o700
+        assert os.stat(path).st_mode & 0o777 == 0o600
     status = credential_status(private_home, environ={})
     assert status["bright_data"] == {
         "configured": True,
@@ -57,7 +58,8 @@ def test_google_client_is_validated_copied_privately_and_reused_by_gmail(tmp_pat
     assert saved == private_home / "google-oauth-client.json"
     assert paths.client == saved
     assert paths.token == private_home / "gmail-token.json"
-    assert os.stat(saved).st_mode & 0o777 == 0o600
+    if os.name != "nt":
+        assert os.stat(saved).st_mode & 0o777 == 0o600
     assert "client-secret" not in json.dumps(credential_status(private_home, environ={}))
     assert gmail.resolve_credential_paths(private_home) == (paths.client, paths.token)
 
