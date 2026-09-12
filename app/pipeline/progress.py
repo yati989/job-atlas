@@ -19,6 +19,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable
 
+from app.process_status import process_id_is_alive
+
 
 DEFAULT_PROGRESS_PATH = (
     Path(__file__).resolve().parents[2] / "logs" / "pipeline_progress" / "latest.json"
@@ -383,16 +385,7 @@ def record_gate_summary_for_snapshot(
 
 
 def process_is_alive(snapshot: dict) -> bool:
-    process_id = snapshot.get("process_id")
-    if not isinstance(process_id, int) or process_id <= 0:
-        return False
-    try:
-        os.kill(process_id, 0)
-        return True
-    except ProcessLookupError:
-        return False
-    except PermissionError:
-        return True
+    return process_id_is_alive(snapshot.get("process_id"))
 
 
 def run_elapsed_seconds(

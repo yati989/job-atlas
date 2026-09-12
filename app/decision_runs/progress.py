@@ -22,6 +22,7 @@ from app.models.orm import (
     DecisionRunStageRecord,
     DecisionRunStageTransition,
 )
+from app.process_status import process_id_is_alive
 from .telemetry import CURRENT_TELEMETRY_VERSION
 
 
@@ -840,13 +841,7 @@ def skip_stage(session: Session, run_id: str, name: str | StageName, *, reason: 
 
 
 def _default_process_is_alive(process_id: int | None) -> bool:
-    if not process_id:
-        return False
-    try:
-        os.kill(process_id, 0)
-    except OSError:
-        return False
-    return True
+    return process_id_is_alive(process_id)
 
 
 def _is_stale(stage: DecisionRunStage, attempt: DecisionRunStageAttempt, *, now: datetime,
