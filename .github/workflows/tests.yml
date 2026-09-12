@@ -28,7 +28,7 @@ jobs:
       - name: Compile application
         run: python -m compileall -q app scripts job_search_agent.py
       - name: Run offline test suite
-        run: python -m pytest tests/
+        run: python -m pytest -vv tests/
 
   package:
     name: Build installable package
